@@ -6,7 +6,7 @@ Repository for PicoUSB - RP2040 based, affordable, easy to use and easy to progr
 You just got an empty PicoUSB? How to program it:
 
 **Setup:**
-1. Download the latest [CircuitPython for Rasperry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/).
+1. Download the latest [CircuitPython for Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/).
 2. Insert PicoUSB into your USB drive while holding the "Boot" button. (Opens it in a bootloader mode. The first time you do this. You do not have to hold the "Boot" button)
 3. Copy the CircuitPython .uf2 file to the USB and wait for few seconds or a minute for it to finish setting up. (will close and reopen the explorer, be patient)
 4. Download/Clone the contents of this repository.
@@ -21,7 +21,7 @@ You just got an empty PicoUSB? How to program it:
 **Important Files:**
  - pico_usb.txt - here is where your executable pseudo-code is located.
  - layout.txt - here is where you select your keyboard layout.
- - code.py - interpreter that executes your pesudo code. Free to modifly. (1)
+ - code.py - interpreter that executes your pseudo code. Free to modify. (1)
  - boot.py - this code executes before the USB is recognised. Free to modify. (1)
 
 **pico_usb.txt API:**
@@ -30,9 +30,9 @@ You just got an empty PicoUSB? How to program it:
 - write()   - writes down anything that is written between the brackets. example: write(https://www.youtube.com/)
 - hold()    - holds down one or more buttons
 - release() - releases all held keys (all)
-- move(x, y) - moves the mouse on the main display to the given location, from the current location as a reference. negative x = left, possitive x = right, negative y = down, possitive y = up.
+- move(x, y) - moves the mouse on the main display to the given location, from the current location as a reference. negative x = left, positive x = right, negative y = down, positive y = up.
 - click(btn)- btn is the mouse button, options are left, right, middle
-- scroll(x) - negative number scrolls down, possitive scrolls up
-- volume(x) - negative number is volume down by x, possitive volume up by x. min volume = 0. max = 100. volume(mute) mutes the speakers.
+- scroll(x) - negative number scrolls down, positive scrolls up
+- volume(x) - negative number is volume down by x, positive volume up by x. min volume = 0. max = 100. volume(mute) mutes the speakers.
 
-**(1)** There are ways you can brick your PicoUSB never to be used again if you disable the USB communication in code, without the ability to enable it again. This happens if you write your own micropython scrip. PicoUSB pseudo-code will never brick the device. Please do not modify the micropython code unless you know what you are doing. Modify at your own discretion. I am not responible if you brick it.
+**(1)** There are ways you can brick your PicoUSB never to be used again if you disable the USB communication in code, without the ability to enable it again. This happens if you write your own micropython script. PicoUSB pseudo-code will never brick the device. Please do not modify the micropython code unless you know what you are doing. Modify at your own discretion. I am not responsible if you brick it.

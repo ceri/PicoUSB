@@ -6,8 +6,8 @@
 # write()   - writes down anything that is written between the brackets. example: write(https://www.youtube.com/). Does not press enter at the end.
 # hold()    - holds down one or more keys
 # release() - releases all held keys (all!)
-# move(x, y) - moves the mouse on the main display to the given location, from the current location as a reference. negative x = left, possitive x = right, negative y = down, possitive y = up.
+# move(x, y) - moves the mouse on the main display to the given location, from the current location as a reference. negative x = left, positive x = right, negative y = down, positive y = up.
 # click(btn)- btn is the mouse button, options are left, right, middle. Example: click(left)
-# scroll(x) - negative number scrolls down, possitive scrolls up
-# volume(x) - negative number is volume down by x, possitive volume up by x. min volume = 0. max = 100. volume(mute) mutes the speakers.
+# scroll(x) - negative number scrolls down, positive scrolls up
+# volume(x) - negative number is volume down by x, positive volume up by x. min volume = 0. max = 100. volume(mute) mutes the speakers.
 
